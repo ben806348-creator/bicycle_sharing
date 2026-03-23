@@ -1,0 +1,296 @@
+<!DOCTYPE html><html><head>
+      <title>sharingbike</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\ben80\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.22\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="chicago-bicycle-sharing">Chicago Bicycle Sharing </h1>
+<p>author：WENG<br>
+date：2026-03-22</p>
+<h3 id="data-httpswwwkagglecomdatasetsyingwurenjianchicago-divvy-bicycle-sharing-dataselectdatacsvhttpswwwkagglecomdatasetsyingwurenjianchicago-divvy-bicycle-sharing-dataselectdatacsv">DATA: <a href="https://www.kaggle.com/datasets/yingwurenjian/chicago-divvy-bicycle-sharing-data?select=data.csv">https://www.kaggle.com/datasets/yingwurenjian/chicago-divvy-bicycle-sharing-data?select=data.csv</a> </h3>
+<h5 id="共9495235筆數據資料資料時間-2014-01-01-000000-至-2018-01-01-000000">共9,495,235筆數據資料（資料時間: 2014-01-01 00:00:00 至 2018-01-01 00:00:00） </h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Field Name</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">trip_id</td>
+<td style="text-align:center">旅程編號</td>
+</tr>
+<tr>
+<td style="text-align:center">year</td>
+<td style="text-align:center">年份</td>
+</tr>
+<tr>
+<td style="text-align:center">month</td>
+<td style="text-align:center">月份</td>
+</tr>
+<tr>
+<td style="text-align:center">week</td>
+<td style="text-align:center">星期幾 (或 該年第幾週)</td>
+</tr>
+<tr>
+<td style="text-align:center">day</td>
+<td style="text-align:center">日期</td>
+</tr>
+<tr>
+<td style="text-align:center">hour</td>
+<td style="text-align:center">小時</td>
+</tr>
+<tr>
+<td style="text-align:center">usertype</td>
+<td style="text-align:center">用戶類型 (例如：會員、臨時用戶)</td>
+</tr>
+<tr>
+<td style="text-align:center">gender</td>
+<td style="text-align:center">性別</td>
+</tr>
+<tr>
+<td style="text-align:center">starttime</td>
+<td style="text-align:center">開始時間</td>
+</tr>
+<tr>
+<td style="text-align:center">stoptime</td>
+<td style="text-align:center">結束時間</td>
+</tr>
+<tr>
+<td style="text-align:center">tripduration</td>
+<td style="text-align:center">旅程持續時間</td>
+</tr>
+<tr>
+<td style="text-align:center">temperature</td>
+<td style="text-align:center">溫度</td>
+</tr>
+<tr>
+<td style="text-align:center">events</td>
+<td style="text-align:center">事件 (例如：天氣事件、特殊活動)</td>
+</tr>
+<tr>
+<td style="text-align:center">from_station_id</td>
+<td style="text-align:center">出發站點編號</td>
+</tr>
+<tr>
+<td style="text-align:center">from_station_name</td>
+<td style="text-align:center">出發站點名稱</td>
+</tr>
+<tr>
+<td style="text-align:center">latitude_start</td>
+<td style="text-align:center">出發站點緯度</td>
+</tr>
+<tr>
+<td style="text-align:center">longitude_start</td>
+<td style="text-align:center">出發站點經度</td>
+</tr>
+<tr>
+<td style="text-align:center">dpcapacity_start</td>
+<td style="text-align:center">出發站點容量 (可停放數量)</td>
+</tr>
+<tr>
+<td style="text-align:center">to_station_id</td>
+<td style="text-align:center">抵達站點編號</td>
+</tr>
+<tr>
+<td style="text-align:center">to_station_name</td>
+<td style="text-align:center">抵達站點名稱</td>
+</tr>
+<tr>
+<td style="text-align:center">latitude_end</td>
+<td style="text-align:center">抵達站點緯度</td>
+</tr>
+<tr>
+<td style="text-align:center">longitude_end</td>
+<td style="text-align:center">抵達站點經度</td>
+</tr>
+<tr>
+<td style="text-align:center">dpcapacity_end</td>
+<td style="text-align:center">抵達站點容量 (可停放數量)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="專案目標">專案目標 </h2>
+<p>使用機器學習模型預測共享單車的每小時租借需求，並根據預測結果為營運方提供站點調度（再平衡）建議。<br>
+參考文獻： "Machine Learning Models for Bike-Sharing Demand Forecasting"</p>
+<h2 id="探索性資料分析-eda">探索性資料分析 (EDA) </h2>
+<p>首先將原始的行程級資料（原為每一筆為一次租借）聚合成小時級別的統計資料，透過<code>starttime</code>和<code>stoptime</code>決定出發次數(計算每小時從站點出發的次數)和抵達次數(計算每小時抵達站點的次數)<br>
+<img src="eda_analysis.png" alt="alt text"></p>
+<ol>
+<li>
+<p>小時租借次數分布<br>
+可看出租借次數分布，呈現右偏，並無極端高/低需求的小時，可以看到0-1小時的租借時間是次數最多的。</p>
+</li>
+<li>
+<p>小時租借模式<br>
+觀察一天當中 各小時的平均租借次數 變化趨勢，可看出哪些時段為租借高峰（如通勤時段），哪些時段為離峰（如深夜），早上8點和晚上5點分別為兩個高峰時段，正好為上下班的時間。</p>
+</li>
+<li>
+<p>星期租借模式<br>
+一週當中各星期的平均租借次數變化，可比較平日與週末的租借行為差異，判斷是否為「通勤型」或「休閒型」使用模式，發現周末的使用頻率較低。</p>
+</li>
+<li>
+<p>溫度與租借量關係<br>
+探討 溫度（°F）與租借量的相關性，散點圖顯示，溫度在約 68-77°F（約20-25°C）時，租借需求達到高峰。</p>
+</li>
+<li>
+<p>天氣事件與租借量關係<br>
+可判斷惡劣天氣（如 rain、storms）是否顯著降低租借量，晴天（clear）租借量最高，雨天（rain）與暴風雨（storms）租借量明顯下降。</p>
+</li>
+</ol>
+<h2 id="特徵工程">特徵工程 </h2>
+<p>分別做了：</p>
+<ol>
+<li>
+<p>時間週期編碼 (Sin/Cos)：將 hour, weekday, month 這類循環變量轉換為正弦和餘弦函數值，以保留其循環特性（e.g.23點和0點在數值上很遠，但時間上很近）。</p>
+</li>
+<li>
+<p>類別變數編碼：對簡化後的天氣事件進行 One-Hot 編碼，轉換為數值特徵。</p>
+<p>衍生特徵建立：<br>
+<code>temp_celsius_squared</code>：捕捉溫度與租借量之間的非線性關係。<br>
+<code>is_weekend</code>：標記是否為週末。<br>
+<code>is_peak</code>：標記是否為尖峰時段（7-9點或17-19   點）。</p>
+</li>
+<li>
+<p>延遲特徵 (Lag Features)：創建了過去1小時<code>lag_1</code>、24小時<code>lag_24</code>（昨天同一時間）和168小時<code>lag_168</code>（上週同一時間）的 total_trips 值，讓模型可以學習到週期性的模式。</p>
+</li>
+<li>
+<p>滾動平均特徵：計算過去幾小時的平均租借量，平滑數據，捕捉短期趨勢。</p>
+</li>
+<li>
+<p><strong><font color="darkred">計算活躍站點數(本文重點)</font></strong>：透過計算每個群集在過去7天內有活動的站點數量有多少個站點至少有一次租借或歸還記錄，<strong>活躍站點數</strong>反映了一個區域的供需潛力。</p>
+</li>
+</ol>
+<h2 id="k-means-站點聚類">K-means 站點聚類 </h2>
+<p>共享單車系統可能擁有數百甚至上千個站點，如果為每個站點單獨建立預測模型，計算量過大且數據稀疏。聚類的目的是將地理位置相近的站點群集為一組，這樣做的好處是同一區域內的站點可能有相似的需求模式(e.g.，商業區早上需求高，住宅區晚上需求高)，這樣可以為每個區域建立同一個預測模型，而不是為數百個站點建立模型後續的車輛調度也可以基於此進行。<br>
+用K-means 聚類演算法分析：<br>
+k=2: Silhouette Score = 0.4267<br>
+k=3: Silhouette Score = 0.4433<br>
+k=4: Silhouette Score = 0.4597<br>
+k=5: Silhouette Score = 0.4234<br>
+k=6: Silhouette Score = 0.4106<br>
+k=7: Silhouette Score = 0.4152<br>
+k=8: Silhouette Score = 0.4361<br>
+k=9: Silhouette Score = 0.4428<br>
+k=10: Silhouette Score = 0.4286<br>
+k=11: Silhouette Score = 0.4136<br>
+k=12: Silhouette Score = 0.4040<br>
+k=13: Silhouette Score = 0.3901<br>
+k=14: Silhouette Score = 0.4033</p>
+<p><img src="kmeans_evaluation.png" alt="alt text"></p>
+<p>結合rsq和輪廓係數決定k值，儘管 k=4 在輪廓係數上表現最佳，但基於城市結構複雜性，因為芝加哥作為大型城市，不同區域（市中心、住宅區、工業區、大學區、公園區等）的需求模式差異很大，四個群集可能無法充分捕捉這些差異，另外，從營運角度，多個區域比4個區域能提供更精細的調度指導，最後選擇 k=9，輪廓係數佳，且能劃分不同區域需求。</p>
+<table>
+  <tbody><tr>
+    <td><img src="image-3.png" alt="image-3.png"></td>
+    <td><img src="image-1.png" alt="image-1"></td>
+  </tr>
+</tbody></table>
+<p>Cluster 1 站點最多（315個），經緯度也在中心點，可能是市中心區域。</p>
+<p>Cluster 8 站點最少（34個），經緯度也偏離群集，可能是偏遠郊區。</p>
+<h4 id="建立群集層級需求資料">建立群集層級需求資料 </h4>
+<p>原本資料是站點式的，轉變為區域級的資料，並記錄得到<br>
+<img src="image-2.png" alt="alt text"><br>
+Cluster 1 站點最多出借與歸還，Cluster 8 站點最少</p>
+<p>也可以得到：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">指標</th>
+<th style="text-align:center">代表的意義</th>
+<th style="text-align:center">營運含義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">平均出發高</td>
+<td style="text-align:center">該區域是「車輛起點」</td>
+<td style="text-align:center">需要更多空車位，需提前調度車輛來填補</td>
+</tr>
+<tr>
+<td style="text-align:center">平均抵達高</td>
+<td style="text-align:center">該區域是「車輛終點」</td>
+<td style="text-align:center">需要更多空車位供歸還，需及時調出車輛</td>
+</tr>
+<tr>
+<td style="text-align:center">出發 ≈ 抵達</td>
+<td style="text-align:center">區域整體平衡</td>
+<td style="text-align:center">日常需求平穩，正常維護即可</td>
+</tr>
+<tr>
+<td style="text-align:center">出發 &gt; 抵達</td>
+<td style="text-align:center">車輛淨流出</td>
+<td style="text-align:center">需要外部調入車輛</td>
+</tr>
+<tr>
+<td style="text-align:center">出發 &lt; 抵達</td>
+<td style="text-align:center">車輛淨流入</td>
+<td style="text-align:center">可以調出車輛支援其他區域</td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-set">MODEL SET </h2>
+<h5 id="線性回歸-lr">線性回歸 (LR) </h5>
+<p>特徵：時間、天氣、週末、尖峰時段（不含 lag 特徵）</p>
+<h5 id="隨機森林-rf">隨機森林 (RF) </h5>
+<p>特徵：使用所有可用特徵</p>
+<h5 id="時間序列模型-ts捕捉時間自相關性"><strong>時間序列模型 (TS)</strong>：捕捉時間自相關性 </h5>
+<p>特徵：LR 所有特徵 + lag_1, lag_24, lag_168</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>公式：
+Trip_N = β0 + β1·Trip_lag1 + β2·Trip_lag24 + β3·Trip_lag168
+        + β4·Month + β5·Day + β6·Hour + β7·Events
+        + β8·Temperature + β9·Active_Station_N
+</code></pre><h5 id="模型交叉驗證">模型交叉驗證 </h5>
+<p>使用10折交叉驗證，不用隨機切分，是因可以在集群中看到某些集群的資料集部分較少，若用隨機切分可能發生模型無法訓練到偏遠地區的資料，另外不用LOOCV是因為資料量有九百多萬筆，需要的電腦性能過高而無法負擔</p>
+<h2 id="model-performance">MODEL PERFORMANCE </h2>
+<h5 id="不同集群模型表現">不同集群模型表現 </h5>
+<p><img src="image-4.png" alt="alt text"></p>
+<h5 id="所有群集整體平均表現">所有群集整體平均表現 </h5>
+<p><img src="image-5.png" alt="alt text"><br>
+<img src="model_comparison_10fold.png" alt="alt text"></p>
+<h5 id="模型表現對比">模型表現對比 </h5>
+<p>RF 模型在各群集中表現最佳，RMSE 最低，R² 最高，因為RF能捕捉非線性關係，對異常值穩健<br>
+TS 模型 (包含 lag 特徵) 表現優於 LR 模型<br>
+LR 模型 (不含 lag 特徵) 表現最差</p>
+<h5 id="模型解釋">模型解釋 </h5>
+<p><img src="cluster_predictions.png" alt="alt text"><br>
+市中心集群(cluster 1)的租借量與變異性最高，預測誤差也最大；偏遠集群(cluster 8)則較穩定，出發與到達需求在不同集群間呈現明顯差異，支持將兩者分開建模的策略。</p>
+<h2 id="應用">應用 </h2>
+<p>透過集群層級的淨需求預測（到達減去出發），可有效識別即將出現單車短缺或過剩的區域，可提升服務可靠性與使用者滿意度</p>
+<h5 id="整體共享單車需求">整體共享單車需求 </h5>
+<p><img src="net_demand_analysis.png" alt="alt text"></p>
+<h5 id="個別區域共享單車需求">個別區域共享單車需求 </h5>
+<p><img src="net_demand.png" alt="alt text"><br>
+紅色部分表示供過於求，綠色部分代表供不應求，可配合不同地區及時間段進行共享單車的調度規劃。</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
